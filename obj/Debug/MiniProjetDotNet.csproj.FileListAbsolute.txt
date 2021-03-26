@@ -1,0 +1,14 @@
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\bin\Debug\MiniProjetDotNet.exe.config
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\bin\Debug\MiniProjetDotNet.exe
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\bin\Debug\MiniProjetDotNet.pdb
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\bin\Debug\Guna.UI.dll
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.csprojAssemblyReference.cache
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.App.resources
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.Properties.Resources.resources
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.user_controls.GestionEtudiantUC.resources
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.csproj.GenerateResource.cache
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.csproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.csproj.CopyComplete
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.exe
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.pdb
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.user_controls.HomePageUC.resources
