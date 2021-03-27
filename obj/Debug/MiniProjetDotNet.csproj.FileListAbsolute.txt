@@ -12,3 +12,5 @@ C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.cs
 C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.exe
 C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.pdb
 C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.user_controls.HomePageUC.resources
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.user_controls.GestionNotesUC.resources
+C:\Users\Utilisateur\source\repos\MiniProjetDotNet\obj\Debug\MiniProjetDotNet.user_controls.ConsultationUC.resources

@@ -37,9 +37,11 @@
             this.gestEtudActivated = new Guna.UI.WinForms.GunaSeparator();
             this.gestNotesActivated = new Guna.UI.WinForms.GunaSeparator();
             this.consultationActivated = new Guna.UI.WinForms.GunaSeparator();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gestionNotesUC1 = new MiniProjetDotNet.user_controls.GestionNotesUC();
             this.homePageUC1 = new MiniProjetDotNet.user_controls.HomePageUC();
             this.gestionEtudiantUC1 = new MiniProjetDotNet.user_controls.GestionEtudiantUC();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.consultationUC1 = new MiniProjetDotNet.user_controls.ConsultationUC();
             this.SuspendLayout();
             // 
             // appTitleLabel
@@ -215,6 +217,25 @@
             this.consultationActivated.TabIndex = 10;
             this.consultationActivated.Thickness = 4;
             // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Montserrat", 8F);
+            this.gunaLabel1.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel1.Location = new System.Drawing.Point(9, 565);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(261, 14);
+            this.gunaLabel1.TabIndex = 11;
+            this.gunaLabel1.Text = "Oussama BABILE - ENSA Agadir - D130002307";
+            // 
+            // gestionNotesUC1
+            // 
+            this.gestionNotesUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(17)))), ((int)(((byte)(19)))));
+            this.gestionNotesUC1.Location = new System.Drawing.Point(85, 122);
+            this.gestionNotesUC1.Name = "gestionNotesUC1";
+            this.gestionNotesUC1.Size = new System.Drawing.Size(800, 400);
+            this.gestionNotesUC1.TabIndex = 12;
+            // 
             // homePageUC1
             // 
             this.homePageUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(17)))), ((int)(((byte)(19)))));
@@ -231,16 +252,13 @@
             this.gestionEtudiantUC1.Size = new System.Drawing.Size(800, 400);
             this.gestionEtudiantUC1.TabIndex = 6;
             // 
-            // gunaLabel1
+            // consultationUC1
             // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Montserrat", 8F);
-            this.gunaLabel1.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel1.Location = new System.Drawing.Point(9, 565);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(261, 14);
-            this.gunaLabel1.TabIndex = 11;
-            this.gunaLabel1.Text = "Oussama BABILE - ENSA Agadir - D130002307";
+            this.consultationUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(17)))), ((int)(((byte)(19)))));
+            this.consultationUC1.Location = new System.Drawing.Point(85, 122);
+            this.consultationUC1.Name = "consultationUC1";
+            this.consultationUC1.Size = new System.Drawing.Size(800, 400);
+            this.consultationUC1.TabIndex = 13;
             // 
             // App
             // 
@@ -248,6 +266,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(17)))), ((int)(((byte)(19)))));
             this.ClientSize = new System.Drawing.Size(977, 585);
+            this.Controls.Add(this.consultationUC1);
+            this.Controls.Add(this.gestionNotesUC1);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.consultationActivated);
             this.Controls.Add(this.gestNotesActivated);
@@ -284,6 +304,8 @@
         private Guna.UI.WinForms.GunaSeparator gestNotesActivated;
         private Guna.UI.WinForms.GunaSeparator consultationActivated;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private user_controls.GestionNotesUC gestionNotesUC1;
+        private user_controls.ConsultationUC consultationUC1;
     }
 }
 

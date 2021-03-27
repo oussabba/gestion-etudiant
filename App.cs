@@ -38,6 +38,8 @@ namespace MiniProjetDotNet
             gestionEtudiantUC1.Show();
             gestionEtudiantUC1.BringToFront();
             homePageUC1.Hide();
+            gestionNotesUC1.Hide();
+            consultationUC1.Hide();
             gestNotesActivated.Hide();
             gestEtudActivated.Show();
             consultationActivated.Hide();
@@ -45,8 +47,11 @@ namespace MiniProjetDotNet
 
         private void gestionNoteBtn_Click(object sender, EventArgs e)
         {
+            gestionNotesUC1.Show();
+            gestionNotesUC1.BringToFront();
             gestionEtudiantUC1.Hide();
             homePageUC1.Hide();
+            consultationUC1.Hide();
             gestNotesActivated.Show();
             gestEtudActivated.Hide();
             consultationActivated.Hide();
@@ -54,6 +59,9 @@ namespace MiniProjetDotNet
 
         private void consultationBtn_Click(object sender, EventArgs e)
         {
+            consultationUC1.Show();
+            consultationUC1.BringToFront();
+            gestionNotesUC1.Hide();
             gestionEtudiantUC1.Hide();
             homePageUC1.Hide();
             gestNotesActivated.Hide();
