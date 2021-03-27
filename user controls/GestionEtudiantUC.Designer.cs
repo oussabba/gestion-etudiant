@@ -179,7 +179,7 @@
             this.dateNaissanceDateTimePicker.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dateNaissanceDateTimePicker.OnPressedColor = System.Drawing.Color.Black;
             this.dateNaissanceDateTimePicker.Radius = 5;
-            this.dateNaissanceDateTimePicker.Size = new System.Drawing.Size(187, 30);
+            this.dateNaissanceDateTimePicker.Size = new System.Drawing.Size(247, 30);
             this.dateNaissanceDateTimePicker.TabIndex = 9;
             this.dateNaissanceDateTimePicker.Text = "vendredi 26 mars 2021";
             this.dateNaissanceDateTimePicker.Value = new System.DateTime(2021, 3, 26, 21, 43, 49, 128);
@@ -209,6 +209,7 @@
             this.nouveauBtn.TabIndex = 10;
             this.nouveauBtn.Text = "Nouveau";
             this.nouveauBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nouveauBtn.Click += new System.EventHandler(this.nouveauBtn_Click);
             // 
             // rechercherButton
             // 
@@ -235,6 +236,7 @@
             this.rechercherButton.TabIndex = 11;
             this.rechercherButton.Text = "Rechercher";
             this.rechercherButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rechercherButton.Click += new System.EventHandler(this.rechercherButton_Click);
             // 
             // ajouterButton
             // 
@@ -261,6 +263,7 @@
             this.ajouterButton.TabIndex = 12;
             this.ajouterButton.Text = "Ajouter";
             this.ajouterButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ajouterButton.Click += new System.EventHandler(this.ajouterButton_Click);
             // 
             // modiferButton
             // 
@@ -363,7 +366,7 @@
             this.nextButton.Image = null;
             this.nextButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nextButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.nextButton.Location = new System.Drawing.Point(432, 340);
+            this.nextButton.Location = new System.Drawing.Point(414, 340);
             this.nextButton.Name = "nextButton";
             this.nextButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.nextButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -390,7 +393,7 @@
             this.previousButton.Image = null;
             this.previousButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.previousButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.previousButton.Location = new System.Drawing.Point(327, 340);
+            this.previousButton.Location = new System.Drawing.Point(309, 340);
             this.previousButton.Name = "previousButton";
             this.previousButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.previousButton.OnHoverBorderColor = System.Drawing.Color.Black;

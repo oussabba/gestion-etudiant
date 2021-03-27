@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace MiniProjetDotNet
 {
-    class ConnectionDB
+    public static class ConnectionDB
     {
-        private string connectionString = @"Server=DESKTOP-E1A412J\SQLEXPRESS;Database=Gest_Notes;Trusted_Connection=True;";
-        private SqlConnection cnx=null;
+        private static string connectionString = @"Data Source=DESKTOP-E1A412J\SQLEXPRESS;Initial Catalog= Gest_Notes;Trusted_Connection=True;";
+        private static SqlConnection cnx=null;
 
-        public SqlConnection Cnx()
+        public static SqlConnection Cnx()
         {
             cnx = new SqlConnection(connectionString);
             return cnx;
