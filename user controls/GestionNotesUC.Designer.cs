@@ -40,7 +40,7 @@
             this.moduleComboBox = new Guna.UI.WinForms.GunaComboBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.modifierButton = new Guna.UI.WinForms.GunaButton();
-            this.rechercherButton = new Guna.UI.WinForms.GunaButton();
+            this.enregistrerNoteButton = new Guna.UI.WinForms.GunaButton();
             this.nouveauBtn = new Guna.UI.WinForms.GunaButton();
             this.apercuButton = new Guna.UI.WinForms.GunaButton();
             this.gunaVSeparator1 = new Guna.UI.WinForms.GunaVSeparator();
@@ -75,8 +75,9 @@
             this.numInscriptionComboBox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.numInscriptionComboBox.OnHoverItemForeColor = System.Drawing.Color.White;
             this.numInscriptionComboBox.Radius = 5;
-            this.numInscriptionComboBox.Size = new System.Drawing.Size(194, 23);
+            this.numInscriptionComboBox.Size = new System.Drawing.Size(249, 23);
             this.numInscriptionComboBox.TabIndex = 4;
+            this.numInscriptionComboBox.SelectedIndexChanged += new System.EventHandler(this.numInscriptionComboBox_SelectedIndexChanged);
             // 
             // fullNameLabel
             // 
@@ -99,12 +100,12 @@
             this.nomEtudiantTextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.nomEtudiantTextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.nomEtudiantTextBox.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomEtudiantTextBox.Location = new System.Drawing.Point(239, 74);
+            this.nomEtudiantTextBox.Location = new System.Drawing.Point(239, 72);
             this.nomEtudiantTextBox.Name = "nomEtudiantTextBox";
             this.nomEtudiantTextBox.PasswordChar = '\0';
             this.nomEtudiantTextBox.Radius = 15;
             this.nomEtudiantTextBox.SelectedText = "";
-            this.nomEtudiantTextBox.Size = new System.Drawing.Size(194, 35);
+            this.nomEtudiantTextBox.Size = new System.Drawing.Size(249, 35);
             this.nomEtudiantTextBox.TabIndex = 6;
             // 
             // noteTextBox
@@ -122,7 +123,7 @@
             this.noteTextBox.PasswordChar = '\0';
             this.noteTextBox.Radius = 15;
             this.noteTextBox.SelectedText = "";
-            this.noteTextBox.Size = new System.Drawing.Size(194, 35);
+            this.noteTextBox.Size = new System.Drawing.Size(249, 35);
             this.noteTextBox.TabIndex = 10;
             // 
             // gunaLabel1
@@ -152,8 +153,9 @@
             this.moduleComboBox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.moduleComboBox.OnHoverItemForeColor = System.Drawing.Color.White;
             this.moduleComboBox.Radius = 5;
-            this.moduleComboBox.Size = new System.Drawing.Size(194, 23);
+            this.moduleComboBox.Size = new System.Drawing.Size(249, 23);
             this.moduleComboBox.TabIndex = 8;
+            this.moduleComboBox.SelectedIndexChanged += new System.EventHandler(this.moduleComboBox_SelectedIndexChanged);
             // 
             // gunaLabel2
             // 
@@ -191,32 +193,34 @@
             this.modifierButton.TabIndex = 18;
             this.modifierButton.Text = "Modifier note";
             this.modifierButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.modifierButton.Click += new System.EventHandler(this.modifierButton_Click);
             // 
-            // rechercherButton
+            // enregistrerNoteButton
             // 
-            this.rechercherButton.AnimationHoverSpeed = 0.07F;
-            this.rechercherButton.AnimationSpeed = 0.03F;
-            this.rechercherButton.BackColor = System.Drawing.Color.Transparent;
-            this.rechercherButton.BaseColor = System.Drawing.Color.White;
-            this.rechercherButton.BorderColor = System.Drawing.Color.Black;
-            this.rechercherButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.rechercherButton.FocusedColor = System.Drawing.Color.Empty;
-            this.rechercherButton.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rechercherButton.ForeColor = System.Drawing.Color.Black;
-            this.rechercherButton.Image = null;
-            this.rechercherButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.rechercherButton.Location = new System.Drawing.Point(565, 111);
-            this.rechercherButton.Name = "rechercherButton";
-            this.rechercherButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.rechercherButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.rechercherButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.rechercherButton.OnHoverImage = null;
-            this.rechercherButton.OnPressedColor = System.Drawing.Color.Black;
-            this.rechercherButton.Radius = 15;
-            this.rechercherButton.Size = new System.Drawing.Size(127, 35);
-            this.rechercherButton.TabIndex = 17;
-            this.rechercherButton.Text = "Enregister note";
-            this.rechercherButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.enregistrerNoteButton.AnimationHoverSpeed = 0.07F;
+            this.enregistrerNoteButton.AnimationSpeed = 0.03F;
+            this.enregistrerNoteButton.BackColor = System.Drawing.Color.Transparent;
+            this.enregistrerNoteButton.BaseColor = System.Drawing.Color.White;
+            this.enregistrerNoteButton.BorderColor = System.Drawing.Color.Black;
+            this.enregistrerNoteButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.enregistrerNoteButton.FocusedColor = System.Drawing.Color.Empty;
+            this.enregistrerNoteButton.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enregistrerNoteButton.ForeColor = System.Drawing.Color.Black;
+            this.enregistrerNoteButton.Image = null;
+            this.enregistrerNoteButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.enregistrerNoteButton.Location = new System.Drawing.Point(565, 111);
+            this.enregistrerNoteButton.Name = "enregistrerNoteButton";
+            this.enregistrerNoteButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.enregistrerNoteButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.enregistrerNoteButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.enregistrerNoteButton.OnHoverImage = null;
+            this.enregistrerNoteButton.OnPressedColor = System.Drawing.Color.Black;
+            this.enregistrerNoteButton.Radius = 15;
+            this.enregistrerNoteButton.Size = new System.Drawing.Size(127, 35);
+            this.enregistrerNoteButton.TabIndex = 17;
+            this.enregistrerNoteButton.Text = "Enregister note";
+            this.enregistrerNoteButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.enregistrerNoteButton.Click += new System.EventHandler(this.enregistrerNoteButton_Click);
             // 
             // nouveauBtn
             // 
@@ -243,6 +247,7 @@
             this.nouveauBtn.TabIndex = 16;
             this.nouveauBtn.Text = "Nouveau";
             this.nouveauBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nouveauBtn.Click += new System.EventHandler(this.nouveauBtn_Click);
             // 
             // apercuButton
             // 
@@ -269,6 +274,7 @@
             this.apercuButton.TabIndex = 19;
             this.apercuButton.Text = "Aperçu";
             this.apercuButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.apercuButton.Click += new System.EventHandler(this.apercuButton_Click);
             // 
             // gunaVSeparator1
             // 
@@ -296,7 +302,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.notesEtudiantDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.notesEtudiantDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.notesEtudiantDataGridView.ColumnHeadersHeight = 4;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -311,7 +317,7 @@
             this.notesEtudiantDataGridView.Name = "notesEtudiantDataGridView";
             this.notesEtudiantDataGridView.RowHeadersVisible = false;
             this.notesEtudiantDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.notesEtudiantDataGridView.Size = new System.Drawing.Size(668, 92);
+            this.notesEtudiantDataGridView.Size = new System.Drawing.Size(668, 106);
             this.notesEtudiantDataGridView.TabIndex = 21;
             this.notesEtudiantDataGridView.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.notesEtudiantDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -325,7 +331,7 @@
             this.notesEtudiantDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.notesEtudiantDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.notesEtudiantDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.notesEtudiantDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.notesEtudiantDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.notesEtudiantDataGridView.ThemeStyle.HeaderStyle.Height = 4;
             this.notesEtudiantDataGridView.ThemeStyle.ReadOnly = false;
             this.notesEtudiantDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -345,7 +351,7 @@
             this.Controls.Add(this.gunaVSeparator1);
             this.Controls.Add(this.apercuButton);
             this.Controls.Add(this.modifierButton);
-            this.Controls.Add(this.rechercherButton);
+            this.Controls.Add(this.enregistrerNoteButton);
             this.Controls.Add(this.nouveauBtn);
             this.Controls.Add(this.noteTextBox);
             this.Controls.Add(this.gunaLabel1);
@@ -374,7 +380,7 @@
         private Guna.UI.WinForms.GunaComboBox moduleComboBox;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaButton modifierButton;
-        private Guna.UI.WinForms.GunaButton rechercherButton;
+        private Guna.UI.WinForms.GunaButton enregistrerNoteButton;
         private Guna.UI.WinForms.GunaButton nouveauBtn;
         private Guna.UI.WinForms.GunaButton apercuButton;
         private Guna.UI.WinForms.GunaVSeparator gunaVSeparator1;

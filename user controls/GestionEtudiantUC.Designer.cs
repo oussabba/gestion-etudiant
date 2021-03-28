@@ -290,6 +290,7 @@
             this.modiferButton.TabIndex = 13;
             this.modiferButton.Text = "Modifier";
             this.modiferButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.modiferButton.Click += new System.EventHandler(this.modiferButton_Click);
             // 
             // supprimerButton
             // 
@@ -316,6 +317,7 @@
             this.supprimerButton.TabIndex = 14;
             this.supprimerButton.Text = "Supprimer";
             this.supprimerButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.supprimerButton.Click += new System.EventHandler(this.supprimerButton_Click);
             // 
             // moyenneButton
             // 
@@ -342,6 +344,7 @@
             this.moyenneButton.TabIndex = 15;
             this.moyenneButton.Text = "Moyenne";
             this.moyenneButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.moyenneButton.Click += new System.EventHandler(this.moyenneButton_Click);
             // 
             // gunaVSeparator1
             // 
